@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- for ios 7 style, multi-resolution icon of 152x152 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
+    <link rel="apple-touch-icon" href="images/logo.png">
+    <meta name="apple-mobile-web-app-title" content="Flatkit">
+    <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" sizes="196x196" href="images/logo.png">    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css" />
+    <link rel="stylesheet" href="bower_components/ng-tags-input/ng-tags-input.min.css" />
+    <link rel="stylesheet" href="bower_components/angular-ui-select/dist/select.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap-offcanvas/dist/css/bootstrap.offcanvas.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css" type="text/css"/>
+    <link rel="stylesheet" href="styles/custom.css" type="text/css"/>
+    <link rel="stylesheet" href="styles/font.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="styles/mycustom.css">
+    <link rel="stylesheet" type="text/css" href="styles/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- endbuild -->
+
+
+    <!-- style -->
+    <!-- <link rel="stylesheet" href="../assets/animate.css/animate.min.css" type="text/css" /> -->
+    <!-- <link rel="stylesheet" href="../assets/glyphicons/glyphicons.css" type="text/css" /> -->
+    <!-- <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.min.css" type="text/css" /> -->
+
+    <!-- <link rel="stylesheet" href="../assets/bootstrap/dist/css/bootstrap.min.css" type="text/css" /> -->
+    <!-- build:css ../assets/styles/app.min.css -->
+    <!-- endbuild -->
+</head>
+<body>
+<!--   <div class="app" id="app">
+  <div id="content" class="app-content box-shadow-z0" role="main"> -->
+
+<div class="app-header navbar-md white box-shadow">
+    <div class="navbar ng-scope">
+        <a data-toggle="collapse" data-target="#navbar-4" class="navbar-item pull-right hidden-md-up m-a-0 m-l">
+            <i class="material-icons"></i>
+        </a>
+        <a class="navbar-brand ng-scope" ng-href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="24" height="24">
+                <path d="M 4 4 L 44 4 L 44 44 Z" fill="#a88add"></path>
+                <path d="M 4 4 L 34 4 L 24 24 Z" fill="rgba(0,0,0,0.15)"></path>
+                <path d="M 4 4 L 24 4 L 4  44 Z" fill="#0cc2aa"></path>
+            </svg>
+            <img src="assets/images/logo.png" alt="." class="hide">
+            <span class="hidden-folded inline ng-binding">Eiffel</span>
+        </a>
+
+        <ul class="nav navbar-nav pull-right">
+
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="login.html" data-toggle="dropdown">
+                    <span>Login</span>
+                </a>
+                <div ui-include="'../views/blocks/dropdown.form.html'"></div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="signup.html">
+              <span class="hidden-xs-down btn btn-sm rounded btn-outline b-danger text-u-c _600">
+                Sign Up
+              </span>
+              <span class="hidden-sm-up ">
+                <i class="material-icons">&#xe7fd;</i>
+              </span>
+                </a>
+            </li>
+        </ul>
+
+
+    </div>
+</div>
+
+<div class="body-inner-padding ng-scope">
+    <div class="padding ng-scope">
+
+<div class="center-block w-xxl w-auto-xs p-y-md">
+    <div class="navbar">
+        <div class="pull-center">
+            <div ui-include="'../views/blocks/navbar.brand.html'"></div>
+        </div>
+    </div>
+    <div class="p-a-md box-color  box-shadow-z1 text-color m-a">
+        <div class="m-b">
+           <h5>Forgot your password?</h5>
+            <p class="text-xs m-t">Enter your email address below and we will send you instructions on how to change your password.</p>
+        </div>
+        <form name="reset">
+            <div class="md-form-group">
+                <input type="email" ng-model="email" class="md-input" required>
+                <label>Enter Your Email</label>
+            </div>
+            <button type="submit" class="btn primary p-x-md"  data-content="Instructions sent to your email."
+                    data-type="info" " >Send</button>
+        </form>
+    </div>
+    <p id="alerts-container"></p>
+    <div class="p-v-lg text-center">Return to <a ui-sref="access.signin" href="/#/signup" class="text-primary _600">Sign in</a></div>
+</div>
+</div>
+    </div>
+<div class="footer p-a-md footer-bg-color">
+    <div class="text-center">
+        <div class="clearfix text-lg m-t">
+            <strong>Eiffel Project</strong>
+        </div>
+        <div class="nav m-y">
+            <a class="nav-link m-r" href>
+                <span>Money</span>
+            </a>
+            <a class="nav-link m-r" href>
+                <span>Property</span>
+            </a>
+            <a class="nav-link m-r" href>
+                <span>Services</span>
+            </a>
+            <a class="nav-link m-r" href>
+                <span>News</span>
+            </a>
+            <a class="nav-link m-r" href>
+                <span>Meets</span>
+            </a>
+            <a class="nav-link m-r" href>
+                <span>Contact Us</span>
+            </a>
+        </div>
+        <div class="block clearfix">
+            <a href class="btn btn-icon btn-social rounded btn-sm">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-facebook indigo"></i>
+            </a>
+            <a href class="btn btn-icon btn-social rounded btn-sm">
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-twitter light-blue"></i>
+            </a>
+            <a href class="btn btn-icon btn-social rounded btn-sm">
+                <i class="fa fa-google-plus"></i>
+                <i class="fa fa-google-plus red"></i>
+            </a>
+            <a href class="btn btn-icon btn-social rounded btn-sm">
+                <i class="fa fa-linkedin"></i>
+                <i class="fa fa-linkedin cyan-600"></i>
+            </a>
+            <a href class="btn btn-icon btn-social rounded btn-sm">
+                <i class="fa fa-behance"></i>
+                <i class="fa fa-behance blue"></i>
+            </a>
+            <a href class="btn btn-icon btn-social rounded btn-sm">
+                <i class="fa fa-dribbble"></i>
+                <i class="fa fa-dribbble pink"></i>
+            </a>
+        </div>
+    </div>
+    <div class="b b-b m-y-md"></div>
+    <div class="row footer-bottom">
+        <div class="col-sm-8">
+            <small class="text-muted">&copy; Copyright 2015. All rights reserved.</small>
+        </div>
+        <div class="col-sm-4">
+            <div class="text-sm-right text-xs-left">
+                <strong>Eiffel</strong>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+<script>
+    !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+                (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+            r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+    }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+</script>
+
+<!-- build:js(.) scripts/vendor.js -->
+
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/tether/dist/js/tether.js"></script>
+<script src="bower_components/PACE/pace.js"></script>
+<script src="bower_components/underscore/underscore.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-aria/angular-aria.js"></script>
+<script src="bower_components/angular-messages/angular-messages.js"></script>
+<script src="bower_components/angular-material/angular-material.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="bower_components/angular-touch/angular-touch.js"></script>
+<script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+<script src="bower_components/angular-slick/dist/slick.js"></script>
+<script src="bower_components/ng-tags-input/ng-tags-input.min.js"></script>
+<script src="bower_components/angular-ui-select/dist/select.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/bootstrap-offcanvas/dist/js/bootstrap.offcanvas.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/main.js"></script>
+<script src="scripts/controllers/login.js"></script>
+
+
+<script src="scripts/controllers/signup.js"></script>
+
+<script src="scripts/controllers/money.js"></script>
+<script src="scripts/controllers/property.js"></script>
+<script src="scripts/controllers/service.js"></script>
+<script src="scripts/controllers/news.js"></script>
+<script src="scripts/controllers/q.js"></script>
+<script src="scripts/controllers/meet.js"></script>
+<script src="scripts/controllers/forgot-pwd.js"></script>
+<script src="scripts/controllers/profile.js"></script>
+<script src="scripts/controllers/my-office.js"></script>
+<script src="scripts/controllers/settings.js"></script>
+<script src="scripts/controllers/change-pwd.js"></script>
+<script src="scripts/controllers/search.js"></script>
+<script src="scripts/controllers/messaging.js"></script>
+<script src="scripts/controllers/notification.js"></script>
+<script src="scripts/controllers/privacy.js"></script>
+<script src="scripts/controllers/my-network.js"></script>
+<script src="scripts/controllers/dashboard.js"></script>
+<script src="scripts/controllers/money-get-details.js"></script>
+<script src="scripts/controllers/property-get-details.js"></script>
+
+<!--<script src="scripts/directives/ngclick.js"></script>-->
+<script src="scripts/directives/ngenter.js"></script>
+<script src="scripts/controllers/service-get-details.js"></script>
+<script src="scripts/controllers/meet-stream-get-details.js"></script>
+<script src="scripts/controllers/news-get-details.js"></script>
+<script src="scripts/controllers/q-a-get-details.js"></script>
+<!-- endbuild -->
+</body>
+</html>
