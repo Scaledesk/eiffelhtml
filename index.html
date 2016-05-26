@@ -44,7 +44,7 @@
                 <a data-toggle="collapse" data-target="#navbar-4" class="navbar-item pull-right hidden-md-up m-a-0 m-l">
                     <i class="material-icons"></i>
                 </a>
-                <a class="navbar-brand ng-scope" ng-href="index.html">
+                <a class="navbar-brand ng-scope" ng-href="/#/">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="24" height="24">
                         <path d="M 4 4 L 44 4 L 44 44 Z" fill="#a88add"></path>
                         <path d="M 4 4 L 34 4 L 24 24 Z" fill="rgba(0,0,0,0.15)"></path>
@@ -55,7 +55,7 @@
                 </a>
                 <ul class="nav navbar-nav pull-right">
                     <li class="nav-item">
-                        <a href="notification" class="nav-link m-t-sm" ui-fullscreen="">
+                        <a href="/#/notification" class="nav-link m-t-sm" ui-fullscreen="">
                             <span><i class="material-icons md-24"></i></span>
                         </a>
                     </li>
@@ -93,32 +93,32 @@
                 <div class="collapse navbar-toggleable-sm" id="navbar-4" data-pjax="">
                     <ul class="nav navbar-nav pull-left nav-active-border b-primary">
                         <li class="nav-item">
-                            <a href="money.html" class="nav-link" ui-sref="app.dashboard" ui-sref-active="active">
+                            <a href="#/money" class="nav-link" ui-sref="app.dashboard" ui-sref-active="active">
                                 <span class="nav-text">Money</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="property.html" class="nav-link" ui-sref="app.widget" ui-sref-active="active">
+                            <a href="#/property" class="nav-link" ui-sref="app.widget" ui-sref-active="active">
                                 <span class="nav-text">Property</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="service.html" class="nav-link" ui-sref="app.widget" ui-sref-active="active">
+                            <a href="#/service" class="nav-link" ui-sref="app.widget" ui-sref-active="active">
                                 <span class="nav-text">Service</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="meet.html" class="nav-link" ui-sref="app.widget" ui-sref-active="active">
+                            <a href="#/meet" class="nav-link" ui-sref="app.widget" ui-sref-active="active">
                                 <span class="nav-text">Meet</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="news.html" class="nav-link" ui-sref="app.widget" ui-sref-active="active">
+                            <a href="#/news" class="nav-link" ui-sref="app.widget" ui-sref-active="active">
                                 <span class="nav-text">News</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="q.html" class="nav-link" ui-sref="app.widget" ui-sref-active="active">
+                            <a href="#/q" class="nav-link" ui-sref="app.widget" ui-sref-active="active">
                                 <span class="nav-text">Q & A</span>
                             </a>
                         </li>
@@ -143,7 +143,7 @@
 
                         <div class="box">
                             <div class="box-header">
-                                <h3>Property </h3>
+                                <h3>Money </h3>
                             </div>
                             <div class="box-body">
                                 <div class="streamline b-l m-l-md">
@@ -185,9 +185,9 @@
 
 
                                                         <div class="form-group">
-                                                            <label for="radio">Description</label>
+                                                            <label for="radio">Amount</label>
 
-                                                            <input class="form-control"  type="text" name="description" >
+                                                            <input class="form-control"  type="text" name="amount" >
                                                         </div>
 
 
@@ -197,8 +197,8 @@
 
 
                                                         <div class="form-group">
-                                                            <label for="radio">Rent or Lease</label>
-                                                            <input class="form-control" type="text" name="rent" >
+                                                            <label for="radio">Rate of Return</label>
+                                                            <input class="form-control" type="text" name="rateReturn" >
                                                         </div>
 
 
@@ -207,15 +207,8 @@
 
 
                                                         <div class="form-group">
-                                                            <label for="radio">Type of Property</label>
-                                                            <select class="form-control" name="propertyType">
-                                                                <option>Property</option>
-                                                                <option>Property  1</option>
-                                                                <option>Property 2</option>
-                                                                <option>Property 3</option>
-                                                                <option>Property 4</option>
-
-                                                            </select>
+                                                            <label for="radio">Duration</label>
+                                                            <input class="form-control" type="text" name="Duration" >
 
 
                                                         </div>
@@ -223,17 +216,36 @@
 
                                                     <div class="row">
 
-
-                                                        <div class="col-md-6 col-sm-6 col-xs-6 text-center">
-                                                            <button class="btn btn-fw primary">Add Photos</button></div>
-                                                        <div class="col-md-6 col-sm-6 col-xs-6 text-center">
-                                                            <button class="btn btn-fw primary">Add Videos</button>
-                                                        </div>
-
+                                                        <label for="radio">Investment</label>
+                                                        <input class="form-control" type="text" name="investment" >
 
                                                     </div>
 
-                                                        <br><br>
+                                                    <div class="row">
+
+                                                        <label for="radio">Invest Against</label>
+                                                        <input class="form-control" type="text" name="investAgainst" >
+
+                                                    </div>
+                                                    <div class="row">
+
+                                                        <label for="radio">Location</label>
+                                                        <input class="form-control" type="text" name="location" >
+
+                                                    </div>
+                                                    <div class="row">
+
+                                                        <label for="radio">Description</label>
+                                                        <input class="form-control" type="text" name="description" >
+
+                                                    </div> <br>
+                                                    <div class="row">
+
+                                                        <label for="radio">Post Confidentially</label>
+                                                        <input type="checkbox" name="post" >
+
+                                                    </div>
+
                                                     <div class="text-center"><button class="btn btn-fw primary">Submit</button></div>
                                                 </form>
                                             </div>
@@ -337,101 +349,95 @@
                         </div>
                     </div>
 
-                  <!--  <div class="col-sm-6 col-md-3">
+                    <div class="col-sm-6 col-md-3">
                         <div class="box">
 
-                            <div class="box container left-side">
-                                <div ng-controller="MoneyCtrl">
-                                    <script type="text/ng-template" id="group-template.html">
-                                        <div class="panel {{panelClass || 'panel-default'}}">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title left-title b-primary">
-                                                    <a href tabindex="0" class="accordion-toggle" ng-click="toggleOpen()"
-                                                       uib-accordion-transclude="heading"><span
-                                                            ng-class="{'text-muted': isDisabled}">{{heading}}</span></a>
-                                                </h4>
-                                            </div>
-                                            <div class="panel-collapse collapse" uib-collapse="!isOpen">
-                                                <div class="panel-body" style="text-align: right" ng-transclude></div>
-                                            </div>
-                                        </div>
-                                    </script>
-                                    <uib-accordion close-others="oneAtATime">
-                                        <uib-accordion-group heading="Filter Feeds" panel-class="panel-danger">
-                                            <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
-                                               class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle">
-                    </span>
-                                                <span>Newest</span></a>
-                                            <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
-                                               class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle">
-                    </span>
-                                                <span>Popular</span></a>
-                                            <a data-toggle="modal" data-target="#chat" data-dismiss="modal"  class="list-group-item
-                   text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle">
-                    </span>
-                                                <span>Older</span></a>
-                                        </uib-accordion-group>
-                                        <uib-accordion-group heading="My Network" panel-class="panel-danger">
-                                            <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
-                                               class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle">
-       <i class="material-icons">people</i></span> <span>My connection</span></a>
-                                            <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
-                                               class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle"><i class="material-icons">person_add</i></span>
-                                                <span>Add Contacts</span></a>
-                                            <a data-toggle="modal" data-target="#chat" data-dismiss="modal"  class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle"><i class="fa fa-user" aria-hidden="true"></i></span>
-                                                <span>People You May Know</span></a>
-                                        </uib-accordion-group>
-                                        &lt;!&ndash;Interest&ndash;&gt;
-                                        <uib-accordion-group heading="Interest" panel-class="panel-danger">
-                                            <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
-                                               class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle">
-        <i class="material-icons">location_city</i></span>Companies</a>
-                                            <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
-                                               class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm
-       img-circle"><i class="fa fa-users" aria-hidden="true"></i></span>Groups</a>
-                                            <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
-                                               class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm
-       img-circle"><i class="fa fa-plus" aria-hidden="true"></i></span>More</a>
-                                        </uib-accordion-group>
-                                        &lt;!&ndash;my office&ndash;&gt;
-                                        <uib-accordion-group heading="My Office" panel-class="panel-danger">
-                                            <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
-                                               class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle">
-        <i class="material-icons">location_city</i></span>Text</a>
-                                            <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
-                                               class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm
-       img-circle"><i class="fa fa-users" aria-hidden="true"></i></span>Text</a>
-                                            <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
-                                               class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm
-       img-circle"><i class="fa fa-plus" aria-hidden="true"></i></span>More</a>
-                                        </uib-accordion-group>
-                                    </uib-accordion>
-                                </div>
-                            </div>
+                            <!--  <div class="box container left-side">
+                                  <div ng-controller="MoneyCtrl">
+                                      <script type="text/ng-template" id="group-template.html">
+                                          <div class="panel {{panelClass || 'panel-default'}}">
+                                              <div class="panel-heading">
+                                                  <h4 class="panel-title left-title b-primary">
+                                                      <a href tabindex="0" class="accordion-toggle" ng-click="toggleOpen()"
+                                                         uib-accordion-transclude="heading"><span
+                                                              ng-class="{'text-muted': isDisabled}">{{heading}}</span></a>
+                                                  </h4>
+                                              </div>
+                                              <div class="panel-collapse collapse" uib-collapse="!isOpen">
+                                                  <div class="panel-body" style="text-align: right" ng-transclude></div>
+                                              </div>
+                                          </div>
+                                      </script>
+                                      <uib-accordion close-others="oneAtATime">
+                                          <uib-accordion-group heading="Filter Feeds" panel-class="panel-danger">
+                                              <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
+                                                 class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle">
+                  </span>
+                                                  <span>Newest</span></a>
+                                              <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
+                                                 class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle">
+                  </span>
+                                                  <span>Popular</span></a>
+                                              <a data-toggle="modal" data-target="#chat" data-dismiss="modal"  class="list-group-item
+                 text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle">
+                  </span>
+                                                  <span>Older</span></a>
+                                          </uib-accordion-group>
+                                          <uib-accordion-group heading="My Network" panel-class="panel-danger">
+                                              <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
+                                                 class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle">
+     <i class="material-icons">people</i></span> <span>My connection</span></a>
+                                              <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
+                                                 class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle"><i class="material-icons">person_add</i></span>
+                                                  <span>Add Contacts</span></a>
+                                              <a data-toggle="modal" data-target="#chat" data-dismiss="modal"  class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle"><i class="fa fa-user" aria-hidden="true"></i></span>
+                                                  <span>People You May Know</span></a>
+                                          </uib-accordion-group>
+                                          &lt;!&ndash;Interest&ndash;&gt;
+                                          <uib-accordion-group heading="Interest" panel-class="panel-danger">
+                                              <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
+                                                 class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle">
+      <i class="material-icons">location_city</i></span>Companies</a>
+                                              <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
+                                                 class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm
+     img-circle"><i class="fa fa-users" aria-hidden="true"></i></span>Groups</a>
+                                              <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
+                                                 class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm
+     img-circle"><i class="fa fa-plus" aria-hidden="true"></i></span>More</a>
+                                          </uib-accordion-group>
+                                          &lt;!&ndash;my office&ndash;&gt;
+                                          <uib-accordion-group heading="My Office" panel-class="panel-danger">
+                                              <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
+                                                 class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle">
+      <i class="material-icons">location_city</i></span>Text</a>
+                                              <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
+                                                 class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm
+     img-circle"><i class="fa fa-users" aria-hidden="true"></i></span>Text</a>
+                                              <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
+                                                 class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm
+     img-circle"><i class="fa fa-plus" aria-hidden="true"></i></span>More</a>
+                                          </uib-accordion-group>
+                                      </uib-accordion>
+                                  </div>
+                              </div>-->
 
 
                         </div>
-                        <div class="box light lt p-a-lg text-center">
-                            <a class="eiff_fab"ng-href="/#/money-get-details">
-                                <button class="md-btn md-fab m-b-sm white eiff-fab "><i class="material-icons md-24"></i>
-                                    <md-tooltip md-direction="top">
-                                        Make new Money Post
-                                    </md-tooltip>
-                                </button> </a>
-                        </div>
-                    </div>-->
+                        <!-- <div class="box light lt p-a-lg text-center">
+                                         <a class="eiff_fab"ng-href="/#/money-get-details">
+                                             <button class="md-btn md-fab m-b-sm white eiff-fab "><i class="material-icons md-24"></i>
+                                                 <md-tooltip md-direction="top">
+                                                     Make new Money Post
+                                                 </md-tooltip>
+                                             </button> </a>
+                         </div>-->
+                    </div>
+
+
                 </div>
+
+
             </div>
-
-
-
-
-
-
-
-
-
-
 
 
             <!-- ############ PAGE END-->
@@ -516,13 +522,7 @@
 
         <!--...........................footer end.............................................-->
     </div>
-    <!-- / -->
 
-    <!-- theme switcher -->
-    <!-- <div id="switcher">
-      <div ui-include="'views/blocks/switcher.html'"></div>
-    </div> -->
-    <!-- / -->
 
     <!-- ############ LAYOUT END-->
 
