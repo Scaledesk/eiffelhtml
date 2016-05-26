@@ -1,0 +1,26 @@
+
+.body-inner-padding{
+padding-top: 100px
+}
+
+.header1-bg-color{
+  background-color: white !important;
+}
+
+
+.footer-bg-color{
+  background-color: grey !important;
+  color: white !important;
+
+}
+
+
+.login{
+	height: 410px !important;
+}
+.padding-left{
+ margin-left: 176px !important;
+}
+.money{
+    height: 1220px !important;
+}

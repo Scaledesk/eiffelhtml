@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Flatkit - HTML Version | Bootstrap 4 Web App Kit with AngularJS</title>
+    <meta name="description" content="Admin, Dashboard, Bootstrap, Bootstrap 4, Angular, AngularJS" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- for ios 7 style, multi-resolution icon of 152x152 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
+    <link rel="apple-touch-icon" href="assets/images/logo.png">
+    <meta name="apple-mobile-web-app-title" content="Flatkit">
+    <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" sizes="196x196" href="assets/images/logo.png">
+
+    <!-- style -->
+    <link rel="stylesheet" href="assets/animate.css/animate.min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/glyphicons/glyphicons.css" type="text/css" />
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/material-design-icons/material-design-icons.css" type="text/css" />
+
+    <link rel="stylesheet" href="assets/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+    <!-- build:css assets/styles/app.min.css -->
+    <link rel="stylesheet" href="assets/styles/app.css" type="text/css" />
+    <!-- endbuild -->
+    <link rel="stylesheet" href="assets/styles/font.css" type="text/css" />
+</head>
+<body>
+
+
+<div class="app" id="app">
+
+    <!-- ############ LAYOUT START-->
+
+    <!-- content -->
+    <div id="content" class="app-content box-shadow-z0" role="main">
+        <!--  ...................................header.........................................-->
+
+        <div class="app-header navbar-md white box-shadow">
+            <div class="navbar ng-scope">
+                <a data-toggle="collapse" data-target="#navbar-4" class="navbar-item pull-right hidden-md-up m-a-0 m-l">
+                    <i class="material-icons"></i>
+                </a>
+                <a class="navbar-brand ng-scope" ng-href="/#/">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="24" height="24">
+                        <path d="M 4 4 L 44 4 L 44 44 Z" fill="#a88add"></path>
+                        <path d="M 4 4 L 34 4 L 24 24 Z" fill="rgba(0,0,0,0.15)"></path>
+                        <path d="M 4 4 L 24 4 L 4  44 Z" fill="#0cc2aa"></path>
+                    </svg>
+                    <img src="assets/images/logo.png" alt="." class="hide">
+                    <span class="hidden-folded inline ng-binding">Eiffel</span>
+                </a>
+                <ul class="nav navbar-nav pull-right">
+                    <li class="nav-item">
+                        <a href="/#/notification" class="nav-link m-t-sm" ui-fullscreen="">
+                            <span><i class="material-icons md-24"></i></span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href class="nav-link dropdown-toggle clear" data-toggle="dropdown">
+          <span class="avatar w-32">
+            <img src="assets/images/a2.jpg" alt="...">
+            <i class="busy b-white right"></i>
+          </span>
+                        </a>
+                        <div class="dropdown-menu pull-right dropdown-menu-scale ng-scope">
+                            <a class="dropdown-item" ui-sref="app.inbox.list" href="#/app/inbox/inbox/">
+                                <span>Inbox</span>
+                                <span class="label warn m-l-xs">3</span>
+                            </a>
+                            <a class="dropdown-item" ui-sref="app.page.profile" href="/#/profile">
+                                <span>Profile</span></a>
+                            <a class="dropdown-item" ui-sref="app.page.setting" href="/#/settings">
+                                <span>Settings</span>
+                                <span class="label primary m-l-xs">3/9</span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" ui-sref="app.docs" href="#/app/docs">Need help?</a>
+                            <a class="dropdown-item" ui-sref="access.signin" href="/#/signup">Sign out</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a  class="navbar-toggle offcanvas-toggle pull-right nav-link m-t-sm"
+                            data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas" style="float:left;"
+                            ui-fullscreen="">
+                            <span><i class="material-icons md-24"></i></span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="collapse navbar-toggleable-sm" id="navbar-4" data-pjax="">
+                    <ul class="nav navbar-nav pull-left nav-active-border b-primary">
+                        <li class="nav-item">
+                            <a href="#/money" class="nav-link" ui-sref="app.dashboard" ui-sref-active="active">
+                                <span class="nav-text">Money</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#/property" class="nav-link" ui-sref="app.widget" ui-sref-active="active">
+                                <span class="nav-text">Property</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#/service" class="nav-link" ui-sref="app.widget" ui-sref-active="active">
+                                <span class="nav-text">Service</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#/meet" class="nav-link" ui-sref="app.widget" ui-sref-active="active">
+                                <span class="nav-text">Meet</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#/news" class="nav-link" ui-sref="app.widget" ui-sref-active="active">
+                                <span class="nav-text">News</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#/q" class="nav-link" ui-sref="app.widget" ui-sref-active="active">
+                                <span class="nav-text">Q & A</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--  ...................................header end.........................................-->
+        <!--<div class="app-header navbar-md white box-shadow">
+          <div ui-include="'views/blocks/header.4.html'"></div>
+        </div>-->
+        <div ui-view class="app-body" id="view">
+
+            <!-- ############ PAGE START-->
+            <div class="padding">
+                <div class="row">
+                    <div class="col-sm-12 col-md-push-3 col-md-6">
+
+
+                        <div class="box">
+                            <div class="box-header">
+                                <h3>Money </h3>
+                            </div>
+                            <div class="box-body">
+                                <div class="streamline b-l m-l-md">
+
+                                    <div class="sl-item">
+
+                                        <div class="sl-content">
+
+                                            <div class="box-body">
+                                                <form role="form"  >
+                                                    <div class="row">
+
+                                                        <div class="form-group">
+                                                            <label for="radio"></label>
+                                                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                                                <input type="radio" name="">Required
+                                                            </div><div class="col-md-6 col-sm-6 col-xs-6">
+                                                            <input type="radio" name="">Offered
+                                                        </div>
+                                                        </div>
+
+
+
+
+
+
+                                                    </div>
+                                                    <div class="row">
+
+
+                                                        <div class="form-group">
+                                                            <label for="radio"> Title</label>
+                                                            <input  class="form-control"  type="text" name="title">
+                                                        </div>
+
+
+                                                    </div>
+                                                    <div class="row">
+
+
+                                                        <div class="form-group">
+                                                            <label for="radio">Amount</label>
+
+                                                            <input class="form-control"  type="text" name="amount" >
+                                                        </div>
+
+
+                                                    </div>
+                                                    <div class="row">
+
+
+
+                                                        <div class="form-group">
+                                                            <label for="radio">Rate of Return</label>
+                                                            <input class="form-control" type="text" name="rateReturn" >
+                                                        </div>
+
+
+                                                    </div>
+                                                    <div class="row">
+
+
+                                                        <div class="form-group">
+                                                            <label for="radio">Duration</label>
+                                                            <input class="form-control" type="text" name="Duration" >
+
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+
+                                                        <label for="radio">Investment</label>
+                                                        <input class="form-control" type="text" name="investment" >
+
+                                                    </div>
+
+                                                    <div class="row">
+
+                                                        <label for="radio">Invest Against</label>
+                                                        <input class="form-control" type="text" name="investAgainst" >
+
+                                                    </div>
+                                                    <div class="row">
+
+                                                    <label for="radio">Location</label>
+                                                    <input class="form-control" type="text" name="location" >
+
+                                                </div>
+                                                    <div class="row">
+
+                                                    <label for="radio">Description</label>
+                                                    <input class="form-control" type="text" name="description" >
+
+                                                </div> <br>
+                                                    <div class="row">
+
+                                                    <label for="radio">Post Confidentially</label>
+                                                    <input type="checkbox" name="post" >
+
+                                                </div>
+
+                                                    <div class="text-center"><button class="btn btn-fw primary">Submit</button></div>
+                                                </form>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+
+
+                    <div class="col-sm-6 col-md-pull-6 col-md-3">
+                        <div class="box">
+                            <div class="box-tool">
+                                <ul class="nav">
+                                    <li class="nav-item inline dropdown">
+                                        <a class="nav-link text-muted" data-toggle="dropdown">
+                                            <i class="material-icons md-18">&#xe164;</i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-scale pull-right dark">
+                                            <a class="dropdown-item" href>Activities</a>
+                                            <a class="dropdown-item" href>Feed</a>
+                                            <a class="dropdown-item" href>Photo</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item">Follow</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="p-a-md text-center">
+                                <p><img src="assets/images/a1.jpg" class="img-circle w-xs"></p>
+                                <a href class="text-md block">Jason Warren</a>
+                                <p><small>London, UK</small></p>
+                                <div>
+                                    <a href="" class="btn btn-icon btn-social rounded white btn-sm">
+                                        <i class="fa fa-facebook"></i>
+                                        <i class="fa fa-facebook indigo"></i>
+                                    </a>
+                                    <a href="" class="btn btn-icon btn-social rounded white btn-sm">
+                                        <i class="fa fa-twitter"></i>
+                                        <i class="fa fa-twitter light-blue"></i>
+                                    </a>
+                                    <a href="" class="btn btn-icon btn-social rounded white btn-sm">
+                                        <i class="fa fa-google-plus"></i>
+                                        <i class="fa fa-google-plus red"></i>
+                                    </a>
+                                </div>
+                                <div class="text-center m-t">
+                                    <a href class="btn btn-sm rounded primary w-sm m-y-xs">Follow</a>
+                                    <a href class="btn btn-sm rounded btn-outline b-primary w-sm">Invite</a>
+                                </div>
+                            </div>
+                            <div class="row no-gutter b-t b-b">
+                                <div class="col-xs-6 b-r">
+                                    <a class="p-a block text-center">
+                                        <span class="block _600">3219</span>
+                                        <span>Followers</span>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a class="p-a block text-center">
+                                        <span class="block _600">1458</span>
+                                        <span>Following</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="p-a">
+                                <a href class="text-ellipsis"><i class="fa fa-link text-muted m-r-sm"></i> apack.com/subdomain</a>
+                                <a href class="text-ellipsis"><i class="fa fa-globe text-muted m-r-sm"></i> yourdomain.com</a>
+                            </div>
+                        </div>
+                        <div class="box light lt">
+                            <div class="box-body">
+
+                                <div class="clear p-a-xs">
+
+
+                                    <span class="pie_chart"><img width="270" height="202" src="assets/images/chart2.png"></span>
+                                    <span><p> Profile 20% completed</p></span>
+
+                                    <div class="clear p-a-xs">
+
+                                        <a href class="btn btn-sm btn-rounded white m-t-xs text-center"> Edit Profile</a>
+                                    </div>
+                                    <!--
+                                    <a href>@Mike Mcalidek</a>
+                                    <small class="block text-muted">2,415 followers / 225 tweets</small>
+                                    <a href class="btn btn-sm btn-rounded white m-t-xs"><i class="fa fa-twitter m-t-xs"></i> Follow</a>-->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3">
+                        <div class="box">
+
+                              <!--  <div class="box container left-side">
+                                    <div ng-controller="MoneyCtrl">
+                                        <script type="text/ng-template" id="group-template.html">
+                                            <div class="panel {{panelClass || 'panel-default'}}">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title left-title b-primary">
+                                                        <a href tabindex="0" class="accordion-toggle" ng-click="toggleOpen()"
+                                                           uib-accordion-transclude="heading"><span
+                                                                ng-class="{'text-muted': isDisabled}">{{heading}}</span></a>
+                                                    </h4>
+                                                </div>
+                                                <div class="panel-collapse collapse" uib-collapse="!isOpen">
+                                                    <div class="panel-body" style="text-align: right" ng-transclude></div>
+                                                </div>
+                                            </div>
+                                        </script>
+                                        <uib-accordion close-others="oneAtATime">
+                                            <uib-accordion-group heading="Filter Feeds" panel-class="panel-danger">
+                                                <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
+                                                   class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle">
+                    </span>
+                                                    <span>Newest</span></a>
+                                                <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
+                                                   class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle">
+                    </span>
+                                                    <span>Popular</span></a>
+                                                <a data-toggle="modal" data-target="#chat" data-dismiss="modal"  class="list-group-item
+                   text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle">
+                    </span>
+                                                    <span>Older</span></a>
+                                            </uib-accordion-group>
+                                            <uib-accordion-group heading="My Network" panel-class="panel-danger">
+                                                <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
+                                                   class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle">
+       <i class="material-icons">people</i></span> <span>My connection</span></a>
+                                                <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
+                                                   class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle"><i class="material-icons">person_add</i></span>
+                                                    <span>Add Contacts</span></a>
+                                                <a data-toggle="modal" data-target="#chat" data-dismiss="modal"  class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle"><i class="fa fa-user" aria-hidden="true"></i></span>
+                                                    <span>People You May Know</span></a>
+                                            </uib-accordion-group>
+                                            &lt;!&ndash;Interest&ndash;&gt;
+                                            <uib-accordion-group heading="Interest" panel-class="panel-danger">
+                                                <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
+                                                   class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle">
+        <i class="material-icons">location_city</i></span>Companies</a>
+                                                <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
+                                                   class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm
+       img-circle"><i class="fa fa-users" aria-hidden="true"></i></span>Groups</a>
+                                                <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
+                                                   class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm
+       img-circle"><i class="fa fa-plus" aria-hidden="true"></i></span>More</a>
+                                            </uib-accordion-group>
+                                            &lt;!&ndash;my office&ndash;&gt;
+                                            <uib-accordion-group heading="My Office" panel-class="panel-danger">
+                                                <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
+                                                   class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle">
+        <i class="material-icons">location_city</i></span>Text</a>
+                                                <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
+                                                   class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm
+       img-circle"><i class="fa fa-users" aria-hidden="true"></i></span>Text</a>
+                                                <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
+                                                   class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm
+       img-circle"><i class="fa fa-plus" aria-hidden="true"></i></span>More</a>
+                                            </uib-accordion-group>
+                                        </uib-accordion>
+                                    </div>
+                                </div>-->
+
+
+                        </div>
+                       <!-- <div class="box light lt p-a-lg text-center">
+                                        <a class="eiff_fab"ng-href="/#/money-get-details">
+                                            <button class="md-btn md-fab m-b-sm white eiff-fab "><i class="material-icons md-24"></i>
+                                                <md-tooltip md-direction="top">
+                                                    Make new Money Post
+                                                </md-tooltip>
+                                            </button> </a>
+                        </div>-->
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+            <!-- ############ PAGE END-->
+
+
+        </div>
+        <!--  .........................footer..............................-->
+
+
+
+        <div class="dark dk pos-rlt">
+            <div class="p-md">
+
+                <div class="footer p-a-md footer-bg-color">
+                    <div class="text-center">
+                        <div class="clearfix text-lg m-t">
+                            <strong>Eiffel</strong>  Project
+                        </div>
+                        <div class="nav m-y">
+                            <a class="nav-link m-r" href>
+                                <span>Money</span>
+                            </a>
+                            <a class="nav-link m-r" href>
+                                <span>Property</span>
+                            </a>
+                            <a class="nav-link m-r" href>
+                                <span>Services</span>
+                            </a>
+                            <a class="nav-link m-r" href>
+                                <span>News</span>
+                            </a>
+                            <a class="nav-link m-r" href>
+                                <span>Meets</span>
+                            </a>
+                            <a class="nav-link m-r" href>
+                                <span>Contact Us</span>
+                            </a>
+                        </div>
+                        <div class="block clearfix">
+                            <a href class="btn btn-icon btn-social rounded btn-sm">
+                                <i class="fa fa-facebook"></i>
+                                <i class="fa fa-facebook indigo"></i>
+                            </a>
+                            <a href class="btn btn-icon btn-social rounded btn-sm">
+                                <i class="fa fa-twitter"></i>
+                                <i class="fa fa-twitter light-blue"></i>
+                            </a>
+                            <a href class="btn btn-icon btn-social rounded btn-sm">
+                                <i class="fa fa-google-plus"></i>
+                                <i class="fa fa-google-plus red"></i>
+                            </a>
+                            <a href class="btn btn-icon btn-social rounded btn-sm">
+                                <i class="fa fa-linkedin"></i>
+                                <i class="fa fa-linkedin cyan-600"></i>
+                            </a>
+                            <a href class="btn btn-icon btn-social rounded btn-sm">
+                                <i class="fa fa-behance"></i>
+                                <i class="fa fa-behance blue"></i>
+                            </a>
+                            <a href class="btn btn-icon btn-social rounded btn-sm">
+                                <i class="fa fa-dribbble"></i>
+                                <i class="fa fa-dribbble pink"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="b b-b m-y-md"></div>
+                    <div class="row footer-bottom">
+                        <div class="col-sm-8">
+                            <small class="text-muted">&copy; Copyright 2015. All rights reserved.</small>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="text-sm-right text-xs-left">
+                                <strong>Eiffel</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!--...........................footer end.............................................-->
+    </div>
+
+
+    <!-- ############ LAYOUT END-->
+
+</div>
+<!-- build:js scripts/app.html.js -->
+<!-- jQuery -->
+<script src="libs/jquery/jquery/dist/jquery.js"></script>
+<!-- Bootstrap -->
+<script src="libs/jquery/tether/dist/js/tether.min.js"></script>
+<script src="libs/jquery/bootstrap/dist/js/bootstrap.js"></script>
+<!-- core -->
+<script src="libs/jquery/underscore/underscore-min.js"></script>
+<script src="libs/jquery/jQuery-Storage-API/jquery.storageapi.min.js"></script>
+<script src="libs/jquery/PACE/pace.min.js"></script>
+
+<script src="scripts/config.lazyload.js"></script>
+
+<script src="scripts/palette.js"></script>
+<script src="scripts/ui-load.js"></script>
+<script src="scripts/ui-jp.js"></script>
+<script src="scripts/ui-include.js"></script>
+<script src="scripts/ui-device.js"></script>
+<script src="scripts/ui-form.js"></script>
+<script src="scripts/ui-nav.js"></script>
+<script src="scripts/ui-screenfull.js"></script>
+<script src="scripts/ui-scroll-to.js"></script>
+<script src="scripts/ui-toggle-class.js"></script>
+
+<script src="scripts/app.js"></script>
+
+<!-- ajax -->
+<script src="libs/jquery/jquery-pjax/jquery.pjax.js"></script>
+<script src="scripts/ajax.js"></script>
+<!-- endbuild -->
+</body>
+</html>
