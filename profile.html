@@ -59,7 +59,7 @@
         <a data-toggle="collapse" data-target="#navbar-4" class="navbar-item pull-right hidden-md-up m-a-0 m-l">
             <i class="material-icons"></i>
         </a>
-        <a class="navbar-brand ng-scope" href="index.html">
+        <a class="navbar-brand ng-scope" ng-href="/#/">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="24" height="24">
                 <path d="M 4 4 L 44 4 L 44 44 Z" fill="#a88add"></path>
                 <path d="M 4 4 L 34 4 L 24 24 Z" fill="rgba(0,0,0,0.15)"></path>
@@ -108,44 +108,100 @@
             </li>
         </ul>
 
-        <div class="collapse navbar-toggleable-sm" id="navbar-4" data-pjax="">
+        <div class="app-header navbar-md white box-shadow">
+            <div class="navbar ng-scope">
+                <a data-toggle="collapse" data-target="#navbar-4" class="navbar-item pull-right hidden-md-up m-a-0 m-l">
+                    <i class="material-icons"></i>
+                </a>
+                <a class="navbar-brand ng-scope" ng-href="/#/">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="24" height="24">
+                        <path d="M 4 4 L 44 4 L 44 44 Z" fill="#a88add"></path>
+                        <path d="M 4 4 L 34 4 L 24 24 Z" fill="rgba(0,0,0,0.15)"></path>
+                        <path d="M 4 4 L 24 4 L 4  44 Z" fill="#0cc2aa"></path>
+                    </svg>
+                    <img src="assets/images/logo.png" alt="." class="hide">
+                    <span class="hidden-folded inline ng-binding">Eiffel</span>
+                </a>
 
-            <ul class="nav navbar-nav pull-left nav-active-border b-primary">
-                <li class="nav-item">
-                    <a href="#/money" class="nav-link" ui-sref="app.dashboard" ui-sref-active="active">
-                        <span class="nav-text">Money</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#/property" class="nav-link" ui-sref="app.widget" ui-sref-active="active">
-                        <span class="nav-text">Property</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#/service" class="nav-link" ui-sref="app.widget" ui-sref-active="active">
-                        <span class="nav-text">Service</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#/meet" class="nav-link" ui-sref="app.widget" ui-sref-active="active">
-                        <span class="nav-text">Meet</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#/news" class="nav-link" ui-sref="app.widget" ui-sref-active="active">
-                        <span class="nav-text">News</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#/q" class="nav-link" ui-sref="app.widget" ui-sref-active="active">
-                        <span class="nav-text">Q & A</span>
-                    </a>
-                </li>
-            </ul>
+                <ul class="nav navbar-nav pull-right">
+
+                    <li class="nav-item">
+                        <a href="notification.html" class="nav-link m-t-sm" ui-fullscreen="">
+                            <span><i class="material-icons md-24"></i></span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href class="nav-link dropdown-toggle clear" data-toggle="dropdown">
+          <span class="avatar w-32">
+            <img src="assets/images/a2.jpg" alt="...">
+            <i class="busy b-white right"></i>
+          </span>
+                        </a>
+                        <div class="dropdown-menu pull-right dropdown-menu-scale ng-scope">
+                            <a class="dropdown-item" ui-sref="app.inbox.list" href="#/app/inbox/inbox/">
+                                <span>Inbox</span>
+                                <span class="label warn m-l-xs">3</span>
+                            </a>
+                            <a class="dropdown-item" ui-sref="app.page.profile" href="profile.html">
+                                <span>Profile</span></a>
+                            <a class="dropdown-item" ui-sref="app.page.setting" href="settings.html">
+                                <span>Settings</span>
+                                <span class="label primary m-l-xs">3/9</span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" ui-sref="app.docs" href="#/app/docs">Need help?</a>
+                            <a class="dropdown-item" ui-sref="access.signin" href="signup.html">Sign out</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a  class="navbar-toggle offcanvas-toggle pull-right nav-link m-t-sm"
+                            data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas" style="float:left;"
+                            ui-fullscreen="">
+                            <span><i class="material-icons md-24"></i></span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="collapse navbar-toggleable-sm" id="navbar-4" data-pjax="">
+
+                    <ul class="nav navbar-nav pull-left nav-active-border b-primary">
+                        <li class="nav-item">
+                            <a href="money.html" class="nav-link" ui-sref="app.dashboard" ui-sref-active="active">
+                                <span class="nav-text">Money</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="property.html" class="nav-link" ui-sref="app.widget" ui-sref-active="active">
+                                <span class="nav-text">Property</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="service.html" class="nav-link" ui-sref="app.widget" ui-sref-active="active">
+                                <span class="nav-text">Service</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="meet.html" class="nav-link" ui-sref="app.widget" ui-sref-active="active">
+                                <span class="nav-text">Meet</span>
+                            </a>
+                        </li>
+                        <!--<li class="nav-item">-->
+                            <!--<a href="news.html" class="nav-link" ui-sref="app.widget" ui-sref-active="active">-->
+                                <!--<span class="nav-text">News</span>-->
+                            <!--</a>-->
+                        <!--</li>-->
+                        <li class="nav-item">
+                            <a href="q.html" class="nav-link" ui-sref="app.widget" ui-sref-active="active">
+                                <span class="nav-text">Q & A</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
+
     </div>
 </div>
-
 
 <div class="body-inner-padding ng-scope">
 <div class="item ">
